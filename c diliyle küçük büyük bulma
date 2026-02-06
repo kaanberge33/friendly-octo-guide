@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int myNumber1, myNumber2, myNumber3;
+    int max, min;
+
+    printf("Enter three numbers\n");
+    scanf("%d %d %d", &myNumber1, &myNumber2, &myNumber3);
+
+    if (myNumber1 > myNumber2 && myNumber1 > myNumber3) {
+        max = myNumber1;
+    } else if (myNumber2 > myNumber1 && myNumber2 > myNumber3) {
+        max = myNumber2;
+    } else {
+        max = myNumber3;
+    }
+
+    if (myNumber1 < myNumber2 && myNumber1 < myNumber3) {
+        min = myNumber1;
+    } else if (myNumber2 < myNumber1 && myNumber2 < myNumber3) {
+        min = myNumber2;
+    } else {
+        min = myNumber3;
+    }
+
+    printf("The largest number: %d\n", max);
+    printf("The smallest number: %d\n", min);
+
+    return 0;
+}
